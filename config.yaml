@@ -1,0 +1,13 @@
+metrics_logger:
+  log_dir: './logs'
+  level: 'INFO'
+  timezone: 'Asia/Jerusalem'
+  log_format: 'json'
+
+services:
+  - name: nginx
+    description: Web Server Service
+    expected_status: active
+  - name: ssh
+    description: Secure Shell Service
+    expected_status: active
